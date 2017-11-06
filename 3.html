@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 03</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+</head>
+
+<script>
+    $(document).ready(function () {
+        $(".boton1").click(function () {
+            $("#parafo1").css("font-weight","bold");
+        });
+    });
+</script>
+
+<style>
+    p {
+        width: 800px;
+        padding: 20px;
+        text-align: justify;
+    }
+</style>
+
+<!-- 3. Cree un párrafo con tres enlaces en su interior. Al pulsar un botón debe poner en negrita el texto del primer enlace. -->
+<body>
+
+    <div>
+        <p>Nota y Fotos <a href="#" id="parafo1"> Rueda SICAB 2017 </a>PIE DE FOTO   De izquierda a derecha: el Jefe de Servicio de Producción Ganadera de la
+            Consejería de Agricultura, Pesca y <a href="#" id="parafo2">Desarrollo Rural </a>de la Junta de Andalucía, Rafael Bazán, el director de Negocio
+            Especializado de <a href="#" id="parafo3" >Caja Rural del Sur</a>, José Carlos...
+        </p>
+    </div>
+    <div>
+        <input type="button" name="boton1" class="boton1" value="Ejecutar">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 05</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+</head>
+
+<script>
+    $(document).ready(function () {
+        $("#but1").click(function () {
+            $("p").hide();
+            if( $("#tx1").val().length == 0){
+                $("#tx1").after("<p>El Campo de texto está Vacío</p>");
+            } else
+                $( "#formul1" ).submit();
+        });
+    });
+</script>
+
+<style>
+    p {
+        padding: 20px;
+        text-align: justify;
+        color: red;
+    }
+</style>
+<!-- 5. Diseñe un formulario con una caja de texto y un botón. Si pulsa el botón y el campo está vacío, debe mostrar el
+     error en un párrafo debajo del formulario. Si pulsa el botón y el campo no está vació, debe enviar el formulario.-->
+<body>
+    <div>
+        <form action="#" id="#formul1" method="get" onsubmit="">
+            <textarea name="tx1" id="tx1" cols="50" rows="10"></textarea>
+        </form>
+    </div>
+    <div>
+        <input type="submit" value="Enviar" id="but1">
+    </div>
+</body>
+</html>

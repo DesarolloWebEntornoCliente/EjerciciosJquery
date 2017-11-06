@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 02</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+</head>
+
+<script>
+    $(document).ready(function()
+    {
+        $("input[name=rd1]").click(function () {
+            if( $("input[class='rd1']:radio").is(':checked')) {
+                $("#capa").css("background","red");
+            } else{
+                $("#capa").css("background","blue");
+            }
+        });
+    });
+</script>
+
+<style>
+    #capa {
+        width: 400px;
+        height: 20px;
+        padding: 20px;
+        background: red;
+    }
+</style>
+<!-- 2. Cree un formulario con un radio con dos opciones. Si se pulsa la opción “Mostrar capa Roja” debe mostrar una
+     capa roja justo debajo de los radio. Si se pulsa la opción “Mostrar capa Azul” debe mostrar en el mismo sitio
+     otra capa que es azul. La capa por defecto es la roja. -->
+
+<body>
+    <div>
+        <form action="" name="form1" id="form1">
+            <input type="radio" checked="checked" class="rd1" name="rd1" value="cpRoja" />Mostrar capa Roja
+            <input type="radio" class="rd2" name="rd1" value="cpAzul" >Mostrar capa Azul
+        </form>
+    </div>
+    <div id="capa"></div>
+</body>
+</html>

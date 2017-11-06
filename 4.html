@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 04</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+</head>
+
+<script>
+    $(document).ready(function () {
+       $(".imagen").hover(function () {
+           $(".imagen").hide();
+       }, function () {
+           $(".imagen").show();
+       }) ;
+    });
+</script>
+
+<style>
+    .imagen {
+        margin-left: 120px;
+
+    }
+</style>
+<!-- 4. Diseñe una página con una sola imagen. Si sitúa el ratón por encima se oculta la imagen. Al salir el ratón de
+     la imagen, se muestra la imagen. Utilice sólo una clase de css.-->
+<body>
+    <img class="imagen" src="img/img1.jpg" alt="">
+</body>
+</html>

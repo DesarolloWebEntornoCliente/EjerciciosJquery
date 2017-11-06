@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 01</title>
+    <link type="text/css" rel="stylesheet" href="">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head>
+
+<script>
+    $(document).ready(function(){
+        $("#capa1").hover(function(){
+            $("#capa1").css("background-color", "blue");
+        }, function(){
+            $("#capa1").css("background-color", "gray");
+        });
+
+        $("#capa3").hover(function () {
+            $("#capa3").css("border","1px solid yellow");
+        }, function () {
+           $("#capa3").css("border","none");
+        });
+
+        $("#capa2").hover(function () {
+           $("#capa2").css("color","green");
+        }, function () {
+           $("#capa2").css("color","black");
+        });
+
+
+    });
+
+</script>
+
+<style>
+    #capa1{
+        width:500px;
+        background-color:gray;
+        padding:5px;
+    }
+    #capa2{
+        width:500px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #capa3{
+             width:500px;
+             margin-top: 20px;
+             padding: 10px;
+         }
+</style>
+<!--  1. Cree tres capas con sus respectivos id. Cuando pase el ratón por encima cambie el color de fondo de la capa
+      con id igual a capa1 a azul. Si el ratón pasa por la capa con id capa3 se debe poner  un borde amarillo a la capa.
+      Por último, si pulsamos en la capa con id capa2 se debe poner la letra de color verde.  -->
+
+<body>
+
+    <div id="capa1">
+        <p>Nota y Fotos Rueda SICAB 2017 PIE DE FOTO   De izquierda a derecha: el Jefe de Servicio de Producción Ganadera de la
+            Consejería de Agricultura, Pesca y Desarrollo Rural de la Junta de Andalucía, Rafael Bazán, el director de Negocio
+            Especializado de Caja Rural del Sur, José Carlos...
+        </p>
+    </div>
+
+    <div id="capa2">
+        <p>Nota y Fotos Rueda SICAB 2017 PIE DE FOTO   De izquierda a derecha: el Jefe de Servicio de Producción Ganadera de la
+            Consejería de Agricultura, Pesca y Desarrollo Rural de la Junta de Andalucía, Rafael Bazán, el director de Negocio
+            Especializado de Caja Rural del Sur, José Carlos...
+        </p>
+    </div>
+
+    <div id="capa3">
+        <p>Nota y Fotos Rueda SICAB 2017 PIE DE FOTO   De izquierda a derecha: el Jefe de Servicio de Producción Ganadera de la
+            Consejería de Agricultura, Pesca y Desarrollo Rural de la Junta de Andalucía, Rafael Bazán, el director de Negocio
+            Especializado de Caja Rural del Sur, José Carlos...
+        </p>
+    </div>
+
+</body>
+</html>
